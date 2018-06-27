@@ -1,0 +1,62 @@
+
+# Create mulitple stories
+
+Scope: Root
+AssetType: Story
+Name: yStory-1
+---
+Scope: Root
+AssetType: Story
+Name: yStory-2
+
+# Create mulitple stories
+Scope: Root
+AssetType: Story
+Name: xStory-1
+---
+Scope: Root
+AssetType: Defect
+Name: xDefect-1
+
+# Create mulitple stories and attach to an Epic
+
+#Create multiple Stories and attach Tests and Tasks to each Edit section 
+Scope: Root
+AssetType: Story
+Name: Story-1
+Children:
+- AssetType: Test
+  Name: Test-1 in Story-1
+- AssetType: Task
+  Name: Task-1 in Story-1
+- AssetType: Test
+  Name: Test-2 in Story-1
+- AssetType: Task
+  Name: Task-2 in Story-1
+---
+Scope: Root
+AssetType: Story
+Name: Story-2
+Children:
+- AssetType: Test
+  Name: Test-1 in Story-2
+- AssetType: Task
+  Name: Task-1 in Story-2
+- AssetType: Test
+  Name: Test-2 in Story-2
+- AssetType: Task
+  Name: Task-2 in Story-2
+---
+Scope: Root
+AssetType: Story
+Name: Story-3
+Children:
+- AssetType: Test
+  Name: Test-1 in Story-3
+- AssetType: Task
+  Name: Task-1 in Story-3
+- AssetType: Test
+  Name: Test-2 in Story-3
+- AssetType: Task
+  Name: Task-2 in Story-3
+  
