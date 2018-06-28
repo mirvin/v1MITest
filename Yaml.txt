@@ -9,7 +9,7 @@ Scope: Root
 AssetType: Story
 Name: yStory-2
 
-# Create mulitple stories
+# Create mulitple types of assets
 Scope: Root
 AssetType: Story
 Name: xStory-1
@@ -18,9 +18,8 @@ Scope: Root
 AssetType: Defect
 Name: xDefect-1
 
-# Create mulitple stories and attach to an Epic
+#Create multiple Stories and attach Tests and Tasks to each
 
-#Create multiple Stories and attach Tests and Tasks to each Edit section 
 Scope: Root
 AssetType: Story
 Name: Story-1
@@ -59,4 +58,35 @@ Children:
   Name: Test-2 in Story-3
 - AssetType: Task
   Name: Task-2 in Story-3
+  
+#Create Story and attach to existing Epic  BROKEN!!!!!!!!!!!!!!!!!!!!
+from:Epic:4622
+update:
+ Subs:
+ add:
+ - AssetType: Story
+   Name: Foo
+   
+   
+#Create a new Story and use an existing Story then attach both to an Epic
+from: Epic:4622
+update:
+ Subs:
+  add:
+   - AssetType: Story
+     Name: Story-1
+   - Story:1234
+ 
+#Associate a Story to an Epic using a Subquery 
+from: Epic:4622
+update:
+ Subs:
+  add:
+   from: Story
+   filter:
+   - ID='Story:1227' 
+   
+   
+   
+   
   
