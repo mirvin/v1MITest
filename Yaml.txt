@@ -1,6 +1,24 @@
+Ideas 
+
+for beginners, it makes sense to use a relational-like model.  For example
+
+from Epic
+- where 
+  - ID: Epic:1161
+  
+"from" : "Epic",
+  "where" : {
+    "ID" : "Epic:1161"
+  },
+  
+
+
+#Create single story
+Scope: Root
+AssetType: Story
+Name: Special story
 
 # Create mulitple stories
-
 Scope: Root
 AssetType: Story
 Name: yStory-1
@@ -59,14 +77,13 @@ Children:
 - AssetType: Task
   Name: Task-2 in Story-3
   
-#Create Story and attach to existing Epic  BROKEN!!!!!!!!!!!!!!!!!!!!
-from:Epic:4622
+#Create Story and attach to existing Epic
+from: Epic:4622
 update:
  Subs:
- add:
- - AssetType: Story
-   Name: Foo
-   
+  add:
+   - AssetType: Story
+     Name: MomyIsEpic   
    
 #Create a new Story and use an existing Story then attach both to an Epic
 from: Epic:4622
@@ -86,6 +103,8 @@ update:
    filter:
    - ID='Story:1227' 
    
+   
+   ###########UPDATES#############################
    
    
    
