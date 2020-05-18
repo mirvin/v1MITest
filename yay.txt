@@ -8,4 +8,11 @@ the bomb
 new stuffs
 new stuffs
 new stuffs
+<<<<<<< HEAD
 asdf
+=======
+asdfasdf
+asdfasdfasdf
+asdf
+asdfsadfadf
+>>>>>>> cea53562ab6f890368d06e210ffad8577e05230e
